@@ -1,0 +1,9 @@
+NOTICE
+
+This repository is a fork of https://github.com/clankercode/pi-idle-time
+(v0.5.0 at fork time), released into the public domain under the Unlicense
+(see LICENSE).
+
+It is hosted at https://git.quinntyx.dev/quinntyx/pi-idle-time and installed
+into pi profiles as a pinned `git:` ref, with any local modifications tracked
+in this fork's history.
