@@ -1,10 +1,4 @@
-/**
- * ISO timestamp utilities for idle-time tracking.
- */
-
-export function toIsoUtc(value: string | Date): string {
-  return new Date(value).toISOString();
-}
+/** ISO timestamp utilities for prompt timing. */
 
 export function toLocalIso(date: Date): string {
   const pad = (n: number) => String(n).padStart(2, "0");
@@ -35,16 +29,9 @@ export function stripMs(iso: string): string {
 }
 
 export function diffMs(laterIso: string | undefined | null, earlierIso: string | undefined | null): number | null {
-  if (!laterIso || !earlierIso) {
-    return null;
-  }
+  if (!laterIso || !earlierIso) return null;
 
   const laterMs = Date.parse(laterIso);
   const earlierMs = Date.parse(earlierIso);
-
-  if (!Number.isFinite(laterMs) || !Number.isFinite(earlierMs)) {
-    return null;
-  }
-
-  return laterMs - earlierMs;
+  return Number.isFinite(laterMs) && Number.isFinite(earlierMs) ? laterMs - earlierMs : null;
 }

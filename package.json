@@ -1,21 +1,21 @@
 {
   "name": "pi-idle-time",
-  "version": "0.5.0",
-  "description": "Idle time display + injection, goal setting and reminders, and idle heartbeats. Statusline integration.",
+  "version": "0.6.0",
+  "description": "Inject local time and elapsed time since the previous user prompt into Pi context.",
   "type": "module",
   "private": false,
   "keywords": [
     "pi-package",
     "pi-extension",
     "pi",
-    "idle-time",
-    "timing",
-    "statusline"
+    "prompt-timing",
+    "timing"
   ],
   "files": [
     "src",
     "README.md",
-    "LICENSE"
+    "LICENSE",
+    "NOTICE"
   ],
   "pi": {
     "extensions": [
@@ -27,24 +27,21 @@
     "check": "tsc --noEmit"
   },
   "peerDependencies": {
-    "@earendil-works/pi-coding-agent": "*",
-    "@earendil-works/pi-tui": "*"
+    "@earendil-works/pi-coding-agent": "*"
   },
   "devDependencies": {
     "@earendil-works/pi-coding-agent": "0.79.4",
-    "@earendil-works/pi-tui": "0.79.4",
     "@types/node": "^22.0.0",
     "tsx": "^4.22.4",
-    "typebox": "^1.1.38",
     "typescript": "^5.7.0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/clankercode/pi-idle-time.git"
+    "url": "git+https://git.quinntyx.dev/quinntyx/pi-idle-time.git"
   },
-  "homepage": "https://github.com/clankercode/pi-idle-time#readme",
+  "homepage": "https://git.quinntyx.dev/quinntyx/pi-idle-time",
   "bugs": {
-    "url": "https://github.com/clankercode/pi-idle-time/issues"
+    "url": "https://git.quinntyx.dev/quinntyx/pi-idle-time/issues"
   },
   "author": "XertroV",
   "engines": {
